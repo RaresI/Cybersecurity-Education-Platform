@@ -1,0 +1,319 @@
+<% layout('/layouts/boilerplate') %>
+<style>
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .banner {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner-main-content h2 {
+    font-size: 28px;
+  }
+
+  .banner-main-content h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .current-news-head {
+    margin-top: 20px;
+  }
+
+  .current-news-head h3 {
+    margin: 10px 0;
+  }
+
+  .current-news-head h3 span {
+    font-weight: normal;
+    color: red;
+  }
+  .text-white {
+    color: #fff;
+  }
+
+  .bg-dark {
+    background-color: #1a1a1a !important;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
+
+  .banner-sub-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .hot-topic {
+    width: 30%;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: #f70000;
+    border-style:double;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .hot-topic img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hot-topic-content {
+    padding: 20px;
+  }
+
+  .hot-topic-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .hot-topic-content h3 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #fff;
+  }
+
+  .hot-topic-content p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .hot-topic-content a {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  main a{
+      padding: 15px 0;
+      display: block;
+      transition: all 0.5s;
+      color:#fff;
+  }
+
+  main span{
+      transition: 0.5s;
+  }
+
+  main a:hover span{
+      padding-left: 5px;
+  }
+
+  main a:hover{
+      color: #f70000;
+  }
+
+  .main-container-right{
+      padding: 30px 10px;
+  }
+
+  .main-container-right > h2{
+      padding: 15px 0 15px 30px;
+      color:#fff;
+  }
+
+  .main-container-right article{
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      padding: 15px 0;
+      border-bottom: 1px solid #fff ;
+  }
+
+  .main-container-right article:last-child{
+      border-bottom: none;
+  }
+
+  .main-container-right img{
+      width: 150px;
+      height: 150px;
+      align-self: center;
+  }
+
+  .main-container-right h4{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+      align-self: center;
+      color:#f70000;
+  }
+
+  .main-container-right article h2{
+      font-size: 18px;
+      padding: 10px 0;
+      font-family: var(--heading);
+      color: #fff;
+  }
+
+  .main-container-right article p{
+      font-size: 15px;
+      font-weight: 300;
+      color: #fff;
+  }
+
+  .main-container-right article div{
+      margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .banner-sub-content {
+      flex-wrap: wrap;
+    }
+    
+    .hot-topic {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .main-container-left,
+    .main-container-right {
+      width: 100%;
+    }
+    
+    .container-top-left img,
+    .container-bottom-left img {
+      width: 30%;
+    }
+    
+    .main-container-right img {
+      width: 40%;
+    }
+    
+  }
+
+  .banner-main-content {
+    color: #fff;
+  }
+
+</style>
+    <section class="banner">
+        <div class = "banner-main-content">
+                <h2>WORLD'S LATEST CYBERSECURITY NEWS</h2>
+                <h3>World's Leading Security News Portal</h3>
+
+                <div class = "current-news-head">
+                  <a href="https://www.theregister.com/2023/05/09/fbi_operation_medusa_snake/"><h3>FBI Medusa Attacks Russia <span>by a US Journalist</span></h3></a> 
+
+                  <a href="https://hbr.org/2023/04/the-new-risks-chatgpt-poses-to-cybersecurity"><h3>AI risks to CyberSecurity <span>by JIM CHILTON</span></h3> </a> 
+
+                </div>
+            </div>
+
+            <div class = "banner-sub-content">
+                <div class = "hot-topic">
+                    <div class = "hot-topic-content">
+                        <h2>Hackers Seize Control</h2>
+
+                        <h3>Ransomware</h3>
+                        <p style="padding-top:10px;">Hackers seize control of someone’s data and demand a ransom to restore access</p>
+                        <a href = "https://www.europarl.europa.eu/news/en/headlines/society/20220120STO21428/cybersecurity-main-and-emerging-threats"><button class="btn btn-danger">Read More</button></a>
+                    </div>
+                </div>
+
+                <div class = "hot-topic">
+                    <div class = "hot-topic-content">
+                        <h2>Google Cloud</h2>
+
+                        <h3>SQL</h3>
+                        <p style="padding-top:10px;">A new security flaw has been disclosed in the Google Cloud Platform's (GCP) Cloud SQL service that could be potentially exploited to obtain access to confidential data.</p>
+                        <a href = "https://thehackernews.com/2023/05/severe-flaw-in-google-clouds-cloud-sql.html?m=1"><button class="btn btn-danger">Read More</button></a>
+                    </div>
+                </div>
+
+                <div class = "hot-topic">
+                    <div class = "hot-topic-content">
+                        <h2>China Attacks USA</h2>
+
+                        <h3>International level Attack</h3>
+                        <p style="padding-top:10px;">Chinese Hackers Attack US Critical Infrastructure Using Network Administration Tools.</p>
+                        <a href = "https://cybersecuritynews.com/chinese-hackers-attack-us-critical-infrastructure/?amp"><button class="btn btn-danger">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <main>
+
+            <section class = "main-container-right">
+                <h2>Latest Stories</h2>
+                
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Tesla Data Leak Exposes Thousands Of Safety Complaints</h2>
+
+                        <p>According to a report in the German newspaper Handelsblatt, Tesla Inc consumers made over 2,400 complaints about self-acceleration issues and 1,500 complaints about brake problems between 2015 and March 2022.</p>
+
+                        <a href = "https://cybersecuritynews.com/tesla-data-leak-safety/?amp">Read More <span>>></span></a>
+                    </div>
+                    <img class="img-fluid" src = "https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                </article>
+
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Stealthy Bandit Stealer Targeting Web Browsers and Cryptocurrency Wallets</h2>
+
+                        <p>A new stealthy information stealer malware called Bandit Stealer has caught the attention of cybersecurity researchers for its ability to target numerous web browsers and cryptocurrency wallets.</p>
+
+                        <a href = "https://thehackernews.com/2023/05/new-stealthy-bandit-stealer-targeting.html?m=1">Read More <span>>></span></a>
+                    </div>
+                    <img src = "https://images.unsplash.com/photo-1524860769472-246b6afea403?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGFja2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+                </article>
+
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Bitdefender Launches App Android Mobile Devices</h2>
+
+                        <p>Bitdefender, a global cybersecurity leader, today unveiled App Anomaly Detection, the industry’s first real-time, behavior-based protection layer available now in Bitdefender Mobile Security for Android.</p>
+
+                        <a href = "https://www.bitdefender.com/news/bitdefender-launches-app-anomaly-detection-for-android-mobile-devices-industrys-first-real-time-protection-layer.html">Read More <span>>></span></a>
+                    </div>
+                    <img src = "data:image/png;base64,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">
+                </article>
+
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>FBI: man steals $600k in sports betting website hack</h2>
+
+                        <p>An 18-year-old Wisconsin man has been charged with hacking into a fantasy sports and betting website and stealing hundreds of thousands of dollars from individual account holders who use the site</p>
+
+                        <a href = "https://cybernews.com/security/fbi-arrest-man-online-sports-betting-hack/">Read More <span>>></span></a>
+                    </div>
+                    <img src = "https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RlYWxzJTIwbW9uZXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+                </article>
+
+                <article>
+                    <h4>just in </h4>
+                    <div>
+                        <h2>Neuralink gets FDA approval for study of brain implants in humans</h2>
+
+                        <p>Elon Musk's brain-implant company Neuralink on Thursday said the US Food and Drug Administration (FDA) had given the green light to its first-in-human clinical trial, a critical milestone after earlier struggles to gain approval.</p>
+
+                        <a href = "https://cybernews.com/tech/neuralink-fda-approval-human-brain-implants/">Read More <span>>></span></a>
+                    </div>
+                    <img src = "https://images1.mobilissimo.ro/F09/6470bf451e61d.png">
+                </article>
+            </section>
+        </main>

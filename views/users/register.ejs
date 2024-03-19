@@ -1,0 +1,61 @@
+<% layout('layouts/boilerplate')%>
+
+<style>
+    body {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1542393545-10f5cde2c810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");;
+    }
+
+    main a {
+        color: #fff;
+        transition: all 0.5s;
+    }
+
+    .bg-dark {
+        background-color: #1a1a1a !important;
+    }
+
+    .nav-link {
+        color: #fff !important;
+    }
+</style>
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="" alt="" class="card-img-top"/>
+                <div class="card-body">
+                    <h5 class="card-title">Register</h5>
+                    <form action="/register" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="valid-feedback">
+                                Looks Good
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success btn-block">Register</button>
+                    </form>
+                        <br>
+                        <a href="login" style="text-decoration: none;"><button class="btn btn-info btn-block">Have an account already?</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

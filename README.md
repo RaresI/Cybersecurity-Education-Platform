@@ -1,1 +1,0 @@
-# Cybersecurity-Education-Platform

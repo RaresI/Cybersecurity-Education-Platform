@@ -1,0 +1,197 @@
+<% layout('/layouts/boilerplate') %>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .bg-dark {
+    background-color: #1a1a1a !important;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
+
+  .quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #a1a1a1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .question {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .options {
+    list-style-type: none;
+    padding: 5px;
+  }
+
+  .options li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .options input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 25px;
+  }
+
+  .submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: darkred;
+  }
+  
+</style>
+
+  
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>CyberSecurity Basics</h1>
+    <br>
+    <div class="question">
+      <p>Question 1: Protocols refers to: </p>
+      <ul class="options">
+        <li><input type="radio" name="q1" value="a">a) Protocols refers to: Rules and Methods</li>
+        <li><input type="radio" name="q1" value="b">b) Protocols refers to: Rules</li>
+        <li><input type="radio" name="q1" value="c">c) Protocols refers to: Methods</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>Question 2: What is a strong password?</p>
+      <ul class="options">
+        <li><input type="radio" name="q2" value="a">a) 12345</li>
+        <li><input type="radio" name="q2" value="b">b) #21Gbd$_daqe2@</li>
+        <li><input type="radio" name="q2" value="c">c) abcd</li>
+      </ul>
+    </div>
+    <div class="question">
+        <p>Question 3: Is two-factor authentication an improvment in security?</p>
+        <ul class="options">
+          <li><input type="radio" name="q3" value="a">a) Yes</li>
+          <li><input type="radio" name="q3" value="b">b) No</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 4: What is encryption?</p>
+        <ul class="options">
+          <li><input type="radio" name="q4" value="a">a) Encryption is the process of converting information into a secret code to keep it secure and protected from unauthorized access.</li>
+          <li><input type="radio" name="q4" value="b">b) Encryption is a type of software used to organize and store data on a computer.</li>
+          <li><input type="radio" name="q4" value="c">c) Encryption is a technique used to enhance the speed and performance of internet connections.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 5: What is social engineering?</p>
+        <ul class="options">
+          <li><input type="radio" name="q5" value="a">a) Social engineering is a form of social interaction aimed at improving communication skills.</li>
+          <li><input type="radio" name="q5" value="b">b) Social engineering is the manipulation of people to gain unauthorized access to information or systems.</li>
+          <li><input type="radio" name="q5" value="c">c) Social engineering is a software tool used for managing social media accounts.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 6: What is a virus scan?</p>
+        <ul class="options">
+          <li><input type="radio" name="q6" value="a">a) A virus scan is a method of searching for new computer viruses in scientific research laboratories.</li>
+          <li><input type="radio" name="q6" value="b">b) A virus scan is a technique used in genetics to analyze the DNA of viruses and identify their genetic composition.</li>
+          <li><input type="radio" name="q6" value="c">c) Process of scanning the computer for malware</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 7: Doing a backup regurarly is a good habit?</p>
+        <ul class="options">
+          <li><input type="radio" name="q7" value="a">a) Yes</li>
+          <li><input type="radio" name="q7" value="b">b) No</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 8: What is the purpose of an anitvirus software?</p>
+        <ul class="options">
+          <li><input type="radio" name="q8" value="a">a) The purpose of antivirus software is to improve internet connectivity.</li>
+          <li><input type="radio" name="q8" value="b">b) The purpose of antivirus software is to optimize system performance.</li>
+          <li><input type="radio" name="q8" value="c">c) The purpose of antivirus software is to protect against and remove malware.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 9: What is a virus?</p>
+        <ul class="options">
+          <li><input type="radio" name="q9" value="a">a) A virus is a hardware component of a computer system.</li>
+          <li><input type="radio" name="q9" value="b">b) A virus is malicious software that can infect and harm computer systems.</li>
+          <li><input type="radio" name="q9" value="c">c) A virus is a type of internet browser.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 10: What is the importance of a software update?</p>
+        <ul class="options">
+          <li><input type="radio" name="q10" value="a">a) Software updates are mainly for adding new features and improving performance.</li>
+          <li><input type="radio" name="q10" value="b">b) Software updates are important to patch security vulnerabilities and protect against potential cyber threats.</li>
+          <li><input type="radio" name="q10" value="c">c) Software updates are not necessary and can be ignored without any consequences.</li>
+        </ul>
+      </div>
+    <button class="submit-btn btn-primary" onclick="submitQuiz()">Submit</button>
+    <p class="result" id="quiz-result"></p>
+  </div>
+
+  <script>
+    function submitQuiz() {
+    var score = 0;
+    var answerKey = {
+    q1: "a",
+    q2: "a",
+    q3: "a",
+    q4: "a",
+    q5: "b",
+    q6: "c",
+    q7: "a",
+    q8: "c",
+    q9: "b",
+    q10: "b",
+  };
+
+  // Calculate score for each question
+  for (var i = 1; i <= 10; i++) {
+    var answer = document.querySelector('input[name="q' + i + '"]:checked');
+    if (answer && answer.value === answerKey["q" + i]) {
+      score++;
+    }
+  }
+
+  var resultElement = document.getElementById("quiz-result");
+  resultElement.textContent = "Your score is: " + score + " out of 10";
+}
+
+
+  </script>
+

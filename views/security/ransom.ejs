@@ -1,0 +1,195 @@
+<% layout('/layouts/boilerplate') %>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .bg-dark {
+    background-color: #1a1a1a !important;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
+
+  .quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #a1a1a1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .question {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .options {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .options li {
+    margin-bottom: 10px;
+  }
+
+  .options input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 25px;
+  }
+
+  .submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: darkred;
+  }
+</style>
+
+  
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Ransomware Quiz</h1>
+    <div class="question">
+      <p>Question 1: What is ransomware? </p>
+      <ul class="options">
+        <li><input type="radio" name="q1" value="a">a) A type of antivirus software.</li>
+        <li><input type="radio" name="q1" value="b">b) Malicious software that encrypts files and demands ransom.</li>
+        <li><input type="radio" name="q1" value="c">c) An online payment system.</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>Question 2: How does ransomware typically spread?</p>
+      <ul class="options">
+        <li><input type="radio" name="q2" value="a">a) Through malicious email attachments or infected websites.</li>
+        <li><input type="radio" name="q2" value="b">b) Through social media posts.</li>
+        <li><input type="radio" name="q2" value="c">c) Through physical USB drives.</li>
+      </ul>
+    </div>
+    <div class="question">
+        <p>Question 3: What is the primary motivation behind ransomware attacks?</p>
+        <ul class="options">
+          <li><input type="radio" name="q3" value="a">a) Personal etertainment.</li>
+          <li><input type="radio" name="q3" value="b">b) Financial gain.</li>
+          <li><input type="radio" name="q3" value="c">c) Political activism.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 4: What should you do if your computer is infected with ransomware?</p>
+        <ul class="options">
+          <li><input type="radio" name="q4" value="a">a) Ignore the ransom demand and continue using the computer.</li>
+          <li><input type="radio" name="q4" value="b">b) Pay the ransom immediately.</li>
+          <li><input type="radio" name="q4" value="c">c) Disconnect from the network and seek professional help.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 5: How can you prevent ransomware infections?</p>
+        <ul class="options">
+          <li><input type="radio" name="q5" value="a">a) Regularly update your software and use reliable antivirus programs.</li>
+          <li><input type="radio" name="q5" value="b">b) Disable your firewall for better performance.</li>
+          <li><input type="radio" name="q5" value="c">c) Click on any email attachment without hesitation.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 6: What is the purpose of ransomware encryption?</p>
+        <ul class="options">
+          <li><input type="radio" name="q6" value="a">a) To make files inaccessible to the victim until the ransom is paid.</li>
+          <li><input type="radio" name="q6" value="b">b) To create backups of important files.</li>
+          <li><input type="radio" name="q6" value="c">c) To permanently delete files from the victim's computer.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 7: Is it advisable to pay the ransom demanded by the ransomware attackers?</p>
+        <ul class="options">
+          <li><input type="radio" name="q7" value="a">a) No</li>
+          <li><input type="radio" name="q7" value="b">b) Yes</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 8: Can ransomware affect mobile devices such as smartphones and tablets?</p>
+        <ul class="options">
+          <li><input type="radio" name="q8" value="a">a) No, ransomware only attacks desktop computers.</li>
+          <li><input type="radio" name="q8" value="b">b) Mobile devices have built-in protection against ransomware.</li>
+          <li><input type="radio" name="q8" value="c">c) Yes, ransomware can target mobile devices as well.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 9: What is the role of backups in protecting against ransomware?</p>
+        <ul class="options">
+          <li><input type="radio" name="q9" value="a">a) Backups are not useful in ransomware situations.</li>
+          <li><input type="radio" name="q9" value="b">b) Backups can help restore files without paying the ransom.</li>
+          <li><input type="radio" name="q9" value="c">c) Backups increase the risk of ransomware attacks.</li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Question 10: How can user awareness and education help prevent ransomware attacks?</p>
+        <ul class="options">
+          <li><input type="radio" name="q10" value="a">a) Educated users are less likely to fall for social engineering tactics used in ransomware attacks.</li>
+          <li><input type="radio" name="q10" value="b">b) Ransomware attacks are solely dependent on technical vulnerabilities.</li>
+          <li><input type="radio" name="q10" value="c">c) User awareness has no impact on preventing ransomware attacks.</li>
+        </ul>
+      </div>
+    <button class="submit-btn btn-primary" onclick="submitQuiz()">Submit</button>
+    <p class="result" id="quiz-result"></p>
+  </div>
+
+  <script>
+    function submitQuiz() {
+    var score = 0;
+    var answerKey = {
+    q1: "b",
+    q2: "a",
+    q3: "b",
+    q4: "c",
+    q5: "a",
+    q6: "a",
+    q7: "a",
+    q8: "c",
+    q9: "b",
+    q10: "a",
+  };
+
+  // Calculate score for each question
+  for (var i = 1; i <= 10; i++) {
+    var answer = document.querySelector('input[name="q' + i + '"]:checked');
+    if (answer && answer.value === answerKey["q" + i]) {
+      score++;
+    }
+  }
+
+  var resultElement = document.getElementById("quiz-result");
+  resultElement.textContent = "Your score is: " + score + " out of 10";
+}
+
+
+  </script>
+
